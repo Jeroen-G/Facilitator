@@ -1,0 +1,42 @@
+{
+    "name": "jeroen-g/facilitator",
+    "description": "Facilitates serving administration panels for your models.",
+    "license": "EUPL-1.1",
+    "authors": [
+        {
+            "name": "JeroenG",
+            "email": "jeroengjeroeng@gmail.com",
+            "homepage": "https://github.com/Jeroen-G"
+        }
+    ],
+    "homepage": "https://github.com/Jeroen-G/facilitator",
+    "keywords": ["Laravel", "Facilitator"],
+    "require": {
+        "illuminate/support": "~5",
+        "spatie/laravel-html": "^2.19",
+        "mockery/mockery": "^1.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "orchestra/testbench": "~3.7",
+        "jeroen-g/testassist": "^1.3",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JeroenG\\Facilitator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JeroenG\\Facilitator\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JeroenG\\Facilitator\\FacilitatorServiceProvider"
+            ]
+        }
+    }
+}
